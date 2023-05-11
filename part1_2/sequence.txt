@@ -1,0 +1,14 @@
+#: Sequence
+
+1: new RingbufferExample(0) - final 
+2: new RingbufferExample(3) - empty - peek() -final
+3: new RingbufferExample(3) - empty - dequeue() - final
+4: new RingbufferExample(3) - empty
+5: new RingbufferExample(3) - empty - enqueue(a) -  filled - dequeue(a) - empty
+6: new RingbufferExample(3) - empty - enqueue(a) - filled - peek() - filled
+7: new RingbufferExample(3) - empty - enqueue(a) - filled - enqueue(b) - filled
+8: new RingbufferExample(2) - empty - enqueue(a) - filled - enqueue(b) - full
+9: new RingbufferExample(3) - empty - enqueue(a) - filled - enqueue(b) - filled - dequeue() - filled
+10: new RingbufferExample(2) - empty - enqueue(a) - filled - enqueue(b) - full - peek() - full
+11: new RingbufferExample(2) - empty - enqueue(a) - filled - enqueue(b) - full - enqueue(c) - full
+12: new RingbufferExample(2) - empty - enqueue(a) - filled - enqueue(b) - full - dequeue(a) - filled
